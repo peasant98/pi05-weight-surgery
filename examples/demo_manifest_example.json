@@ -1,0 +1,207 @@
+{
+ "sections": [
+  {
+   "type": "title",
+   "title": "Editing a robot policy's weights directly",
+   "subtitle": "pi0.5 on LIBERO",
+   "note": "closed-form edit  -  no gradients, no fine-tuning, same model size"
+  },
+  {
+   "type": "title",
+   "title": "1 \u00b7 background replaced by a random photo",
+   "subtitle": "same episode, same photo, original vs edited",
+   "seconds": 1.4
+  },
+  {
+   "type": "spotlight",
+   "title": "background swapped",
+   "pairs": [
+    {
+     "orig": "videos/libero_object_t4_ep3_none_FAIL_orig.mp4",
+     "edit": "videos/libero_object_t4_ep3_none_ok_edit.mp4",
+     "ok_orig": false,
+     "ok_edit": true,
+     "label": "LIBERO-Object",
+     "caption": "pick up the ketchup and place it in the basket"
+    },
+    {
+     "orig": "videos/libero_object_t7_ep2_none_FAIL_orig.mp4",
+     "edit": "videos/libero_object_t7_ep2_none_ok_edit.mp4",
+     "ok_orig": false,
+     "ok_edit": true,
+     "label": "LIBERO-Object",
+     "caption": "pick up the milk and place it in the basket"
+    }
+   ]
+  },
+  {
+   "type": "grid",
+   "title": "background swapped: 6 random held-out episodes",
+   "pairs": [
+    {
+     "orig": "videos/libero_object_t5_ep0_none_FAIL_orig.mp4",
+     "edit": "videos/libero_object_t5_ep0_none_ok_edit.mp4",
+     "ok_orig": false,
+     "ok_edit": true,
+     "label": "LIBERO-Object",
+     "caption": "pick up the tomato sauce and place it in the basket"
+    },
+    {
+     "orig": "videos/libero_spatial_t9_ep1_none_FAIL_orig.mp4",
+     "edit": "videos/libero_spatial_t9_ep1_none_ok_edit.mp4",
+     "ok_orig": false,
+     "ok_edit": true,
+     "label": "LIBERO-Spatial",
+     "caption": "pick up the black bowl on the wooden cabinet and place it on the plate"
+    },
+    {
+     "orig": "videos/libero_10_t9_ep1_none_FAIL_orig.mp4",
+     "edit": "videos/libero_10_t9_ep1_none_FAIL_edit.mp4",
+     "ok_orig": false,
+     "ok_edit": false,
+     "label": "LIBERO-Long",
+     "caption": "put the yellow and white mug in the microwave and close it"
+    },
+    {
+     "orig": "videos/libero_spatial_t0_ep0_none_ok_orig.mp4",
+     "edit": "videos/libero_spatial_t0_ep0_none_ok_edit.mp4",
+     "ok_orig": true,
+     "ok_edit": true,
+     "label": "LIBERO-Spatial",
+     "caption": "pick up the black bowl between the plate and the ramekin and place it on the plate"
+    },
+    {
+     "orig": "videos/libero_object_t4_ep0_none_ok_orig.mp4",
+     "edit": "videos/libero_object_t4_ep0_none_ok_edit.mp4",
+     "ok_orig": true,
+     "ok_edit": true,
+     "label": "LIBERO-Object",
+     "caption": "pick up the ketchup and place it in the basket"
+    },
+    {
+     "orig": "videos/libero_10_t0_ep1_none_FAIL_orig.mp4",
+     "edit": "videos/libero_10_t0_ep1_none_ok_edit.mp4",
+     "ok_orig": false,
+     "ok_edit": true,
+     "label": "LIBERO-Long",
+     "caption": "put both the alphabet soup and the tomato sauce in the basket"
+    }
+   ]
+  },
+  {
+   "type": "title",
+   "title": "2 \u00b7 camera moved 90\u00b0 around the table",
+   "subtitle": "inset = the camera position the policy was trained with",
+   "seconds": 1.4
+  },
+  {
+   "type": "spotlight",
+   "title": "camera orbited 90\u00b0",
+   "pairs": [
+    {
+     "orig": "videos/libero_10_t1_ep0_none_FAIL_orig.mp4",
+     "edit": "videos/libero_10_t1_ep0_none_ok_edit.mp4",
+     "ok_orig": false,
+     "ok_edit": true,
+     "label": "LIBERO-Long",
+     "caption": "put both the cream cheese box and the butter in the basket",
+     "inset": "videos/libero_10_t1_ep0_nominal.png"
+    },
+    {
+     "orig": "videos/libero_goal_t0_ep1_none_FAIL_orig.mp4",
+     "edit": "videos/libero_goal_t0_ep1_none_ok_edit.mp4",
+     "ok_orig": false,
+     "ok_edit": true,
+     "label": "LIBERO-Goal",
+     "caption": "open the middle drawer of the cabinet",
+     "inset": "videos/libero_goal_t0_ep1_nominal.png"
+    }
+   ]
+  },
+  {
+   "type": "grid",
+   "title": "camera orbited 90\u00b0: 6 random held-out episodes",
+   "pairs": [
+    {
+     "orig": "videos/libero_goal_t3_ep1_none_ok_orig.mp4",
+     "edit": "videos/libero_goal_t3_ep1_none_ok_edit.mp4",
+     "ok_orig": true,
+     "ok_edit": true,
+     "label": "LIBERO-Goal",
+     "caption": "open the top drawer and put the bowl inside"
+    },
+    {
+     "orig": "videos/libero_goal_t5_ep1_none_FAIL_orig.mp4",
+     "edit": "videos/libero_goal_t5_ep1_none_FAIL_edit.mp4",
+     "ok_orig": false,
+     "ok_edit": false,
+     "label": "LIBERO-Goal",
+     "caption": "push the plate to the front of the stove"
+    },
+    {
+     "orig": "videos/libero_10_t8_ep0_none_FAIL_orig.mp4",
+     "edit": "videos/libero_10_t8_ep0_none_FAIL_edit.mp4",
+     "ok_orig": false,
+     "ok_edit": false,
+     "label": "LIBERO-Long",
+     "caption": "put both moka pots on the stove"
+    },
+    {
+     "orig": "videos/libero_goal_t1_ep1_none_FAIL_orig.mp4",
+     "edit": "videos/libero_goal_t1_ep1_none_ok_edit.mp4",
+     "ok_orig": false,
+     "ok_edit": true,
+     "label": "LIBERO-Goal",
+     "caption": "put the bowl on the stove"
+    },
+    {
+     "orig": "videos/libero_goal_t7_ep0_none_ok_orig.mp4",
+     "edit": "videos/libero_goal_t7_ep0_none_ok_edit.mp4",
+     "ok_orig": true,
+     "ok_edit": true,
+     "label": "LIBERO-Goal",
+     "caption": "turn on the stove"
+    },
+    {
+     "orig": "videos/libero_goal_t0_ep1_none_ok_orig.mp4",
+     "edit": "videos/libero_goal_t0_ep1_none_ok_edit.mp4",
+     "ok_orig": true,
+     "ok_edit": true,
+     "label": "LIBERO-Goal",
+     "caption": "open the middle drawer of the cabinet"
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "title": "pi0.5 + closed-form weight edit",
+   "subtitle": "held-out episodes, all 4 LIBERO suites (120 per cell)",
+   "columns": [
+    "Clean",
+    "Background\nswapped",
+    "Camera\norbited 90\u00b0"
+   ],
+   "rows": [
+    [
+     "pi0.5",
+     [
+      "97%",
+      "58%",
+      "41%"
+     ],
+     false
+    ],
+    [
+     "+ weight edit",
+     [
+      "98%",
+      "73%",
+      "54%"
+     ],
+     true
+    ]
+   ],
+   "footnote": "edits fit from paired simulator renders (same state, nuisance changed); no training"
+  }
+ ]
+}

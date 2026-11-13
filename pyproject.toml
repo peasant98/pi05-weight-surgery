@@ -1,0 +1,18 @@
+[project]
+name = "wsp-vla"
+version = "0.1.0"
+description = "Closed-form weight-space edits that make pi0.5 robust to visual nuisances (no gradients)"
+requires-python = ">=3.8"
+dependencies = ["numpy", "pillow", "imageio[ffmpeg]"]
+
+[project.optional-dependencies]
+model = ["openpi"]          # install into the openpi env (JAX)
+sim = ["libero", "openpi-client"]
+plots = ["matplotlib"]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["wsp_vla*"]
